@@ -1,0 +1,222 @@
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    /* width 400 600 700 */
+}
+h1, h2 , h3 , h4 ,h5 {
+    font-family: "Young Serif", serif;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+hr {
+    border-top: 1px solid var(--Light-Grey);
+    height: 0px;
+}
+
+main {
+    background-color: var(--Eggshell);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.recipe-main {
+    background-color: white;
+    padding: 40px;
+    width: 735px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.recipe-main .img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.title h1 {
+    font-size: 46px;
+    font-weight: 900;
+    margin-top: 7px;
+}
+
+.title p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--Dark-Charcoal);
+}
+
+.prep-time {
+    background-color: hsl(322, 100%, 98%);
+    padding: 30px;
+    border-radius: 20px;
+}
+.prep-time ul {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--Dark-Raspberry);
+}
+.prep-time h2 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--Dark-Raspberry);
+}
+.prep-time ul li {
+    padding: 0 0px;
+}
+.prep-time ul li span {
+    color: var(--Wenge-Brown);
+}
+.prep-time ul li span:nth-of-type(1){
+    font-weight: 700;
+    color: var(--Dark-Charcoal);
+}
+.prep-time ul li span {
+    font-weight: 400;
+}
+.ingredients {
+    display: flex;
+    flex-direction: column;
+}
+.ingredients h3 {
+    color: var(--Nutmeg);
+}
+.ingredients ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.ingredients ul li {
+    padding: 0 20px;
+    color: var(--Nutmeg);
+}
+.ingredients ul li span {
+    color: var(--Wenge-Brown);
+    font-weight: 400;
+}
+.instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.instructions h4 {
+    color: var(--Nutmeg);
+}
+.instructions ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.instructions ol li {
+    font-size: 15px;
+    color: var(--Nutmeg);
+    font-weight: 900;
+    padding-left: 20px;
+    line-height: 1.2;
+}
+.instructions ol li span {
+    color: var(--Wenge-Brown);
+    font-weight: 500;
+    font-size: 16px;
+}
+.instructions ol li span span {
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--Dark-Charcoal);
+}
+
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.nutrition h5 {
+    color: var(--Nutmeg);
+}
+.nutrition p {
+    color: var(--Dark-Charcoal);
+    font-weight: 500;
+    font-size: 18px;
+}
+.nutrition ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nutrition ul li {
+    display: flex;
+}
+.nutrition ul li span {
+    width: 50%;
+    padding: 0 30px;
+}
+.nutrition ul li span:nth-of-type(1) {
+    color: var(--Dark-Charcoal);
+    font-weight: 500;
+}   
+.nutrition ul li span:nth-of-type(2) {
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0;
+        min-height: 100vh;
+        padding-bottom: 20px;
+    }
+    main .recipe-main {
+        width: 100%;
+        padding: 0;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+    main .recipe-main section {
+        padding: 0 40px;
+    }
+    .recipe-main .prep-time {
+        margin: 0 20px;
+        padding: 30px 20px;
+    }
+    .recipe-main .img {
+        width: 100%;
+        border-radius: 0;
+    }
+    .recipe-main .title {
+        padding: 0 20px;
+    }
+    .recipe-main .title h1 {
+        font-size: 30px;
+    }
+    .recipe-main .nutrition {
+        padding: 20px 20px 60px 20px;
+    }
+}
